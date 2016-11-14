@@ -25,7 +25,7 @@ gulp.task('preview', function () {
         },
         options = {
             batch : ['./app/options'],
-            helpers : ['./lib/*.js' ]
+            helpers : helpers
         };
 
     return gulp.src('app/index.hbs')
