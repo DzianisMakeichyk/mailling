@@ -8,3 +8,21 @@
 + gulp serve
 
 + gulp build - końcowy plik
+
+
+
+## Button
+
+```bash
+#text,
+#font_size,
+#font_weight,
+#text_transform,
+#url,
+#width_btn,
+#height_btn,
+#bg_color,
+#border_color,
+#border_radius,
+#text_color,
+#align
