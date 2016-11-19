@@ -12,26 +12,49 @@
 
 
 ## Button
-
+_makeButton_
 ```bash
 #text,
-#font_size,
-#font_weight,
-#text_transform,
+#font-size,
+#font-weight,
+#text-transform,
 #url,
-#width_btn,
-#height_btn,
-#bg_color,
-#border_color,
-#border_radius,
-#text_color,
+#width-btn,
+#height-btn,
+#bg-color,
+#border-color,
+#border-radius,
+#text-color,
 #align
 ```
 
 ## Header pic
+_headerPic_
 
 ```bash
+#link
 #url
+#alt
+```
+
+## Text
+_textMain_
+
+```bash
+#font-size,
+#font-weight,
+#text-color,
+#text-width,
+#text-align,
+#text-transform,
+#text_main
+`````
+
+## Space
+_space_
+
+```bash
+#space-height
 ```
 
 
