@@ -1,13 +1,13 @@
 #### npm i -d ####
 
 1. => __gulpfile.js__
-    1. => "__var__" i wpisać numer taska w "__index_name__";
-    2. => "__templateData__" i wpisać '__title__' i '__preHeader__';
+    1. => "__var__" name of file"__index_name__";
+    2. => "__templateData__" -> '__title__' i '__preHeader__';
 
 
-+ gulp serve
+2. gulp serve
 
-+ gulp build - końcowy plik
+3. gulp build - final file
 
 
 
@@ -55,6 +55,25 @@ _space_
 
 ```bash
 #space-height
+```
+
+## Short Line
+_shortLine_
+
+```bash
+#width,
+#height,
+#color
+```
+
+## Daner
+_baner_
+
+```bash
+#link
+#url
+#alt
+#utm
 ```
 
 
