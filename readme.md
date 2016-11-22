@@ -66,14 +66,38 @@ _shortLine_
 #color
 ```
 
-## Daner
+## Baner
 _baner_
 
 ```bash
-#link
-#url
-#alt
+#link,
+#url,
+#alt,
 #utm
+```
+
+## Block
+_#block --  /block_
+
+```bash
+#left_column,
+#center_column,
+#right_column
+```
+
+## List
+_#list title  /list_
+
+```bash
+#side_col,
+#color_dot,
+#size_dot,
+#font_color,
+#font_size,
+#font_weight,
+#list_width
+#
+# gulpfile.js => nav => title <= wright your list
 ```
 
 

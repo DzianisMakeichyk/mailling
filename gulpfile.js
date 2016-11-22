@@ -21,7 +21,11 @@ gulp.task("watch", function () {
 gulp.task('preview', function () {
     var templateData = {
             title: 'JobAlert',
-            preHeader: 'JobAlert'
+            preHeader: 'JobAlert',
+            nav: [
+                { title: 'Katz Got Your Tongue' },
+                { title: 'SproutCore Blog' }
+            ]
         },
         options = {
             batch : ['./app/options'],
