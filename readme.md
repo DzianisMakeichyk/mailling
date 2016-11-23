@@ -12,9 +12,10 @@
 
 
 ## Button
-_makeButton_
+{{#makeButton}}
+    Name
+{{/makeButton}}
 ```bash
-#text,
 #font-size,
 #font-weight,
 #text-transform,
@@ -29,7 +30,7 @@ _makeButton_
 ```
 
 ## Header pic
-_headerPic_
+{{{headerPic}}}
 
 ```bash
 #link
@@ -38,7 +39,9 @@ _headerPic_
 ```
 
 ## Text
-_textMain_
+{{#textMain}}
+    text
+{{/textMain}}
 
 ```bash
 #font-size,
@@ -51,14 +54,14 @@ _textMain_
 `````
 
 ## Space
-_space_
+{{{space}}}
 
 ```bash
 #space-height
 ```
 
 ## Short Line
-_shortLine_
+{{{shortLine}}}
 
 ```bash
 #width,
