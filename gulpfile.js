@@ -20,10 +20,10 @@ gulp.task("watch", function () {
 
 gulp.task('preview', function () {
     var templateData = {
-            title: 'JobAlert',
-            preHeader: 'JobAlert',
+            title: 'Mailling 2.0',
+            preHeader: 'Cos tam',
             nav: [
-                { title: 'Katz Got Your Tongue' },
+                { title: 'Katz Got Your Tongue SproutCore Blog SproutCore Blog SproutCore Blog SproutCore Blog' },
                 { title: 'SproutCore Blog' }
             ]
         },
