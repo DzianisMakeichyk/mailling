@@ -8,7 +8,6 @@ var gulp = require("gulp"),
     autoprefixer = require("autoprefixer"),
     browsersync = require("browser-sync").create(),
     fs = require('node-fs'),
-    helpers = require('./lib/helpers'),
     index_name = 'index_13';
 
 
@@ -16,26 +15,33 @@ var gulp = require("gulp"),
 gulp.task("watch", function () {
     gulp.watch('./index.html');
     gulp.watch('app/*.hbs', ["preview"]);
+    gulp.watch('lib/helpers.js', ["preview"]);
 });
 
 gulp.task('preview', function () {
     var templateData = {
-            title: 'Mailling 2.0',
+        title: 'Mailling 2.0',
             preHeader: 'Cos tam',
             nav: [
-                { title: 'Katz Got Your Tongue SproutCore Blog SproutCore Blog SproutCore Blog SproutCore Blog' },
-                { title: 'SproutCore Blog' }
-            ]
-        },
-        options = {
-            batch : ['./app/options'],
-            helpers : helpers
-        };
+            { title: 'Katz Got Your Tongue SproutCore Blog SproutCore Blog SproutCore Blog SproutCore Blog' },
+            { title: 'SproutCore Blog' }
+        ]
+    };
+    delete require.cache[require.resolve('./lib/helpers')];
+    var options = {
+        batch : ['./app/options'],
+        helpers : require('./lib/helpers')
+    };
 
-    return gulp.src('app/index.hbs')
+    gulp.src('app/index.hbs')
         .pipe(handlebars(templateData, options))
+        .on('error', function(error) {
+            console.error(error.toString());
+            this.emit('end');
+        })
         .pipe(rename('index.html'))
         .pipe(gulp.dest('./'));
+
 });
 
 gulp.task('SendToAcid', function () {

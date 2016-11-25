@@ -14,7 +14,7 @@
         <tr>
           <td>
             <p style="font-size: 1px; display: none; color: transparent; opacity: 0;">
-              Wykorzystaj szansę i odkryj swój talent!
+              {{preHeader}}
             </p>
           </td>
         </tr>
@@ -29,13 +29,13 @@
                 {{{headerPic "http://absolvent.pl/" "http://images.gildia.pl/_n_/literatura/news/2014/09/wszechswiat-na-sprzedaz/1-590.jpg" "absolvent img" }}}
                 {{{space "20"}}}
                 {{#block "5" "90" "5"}}
-                  {{#textMain "16" "400" "212121" "100%" "justful" "none"}}
+                  {{#textMain "16" "212121" "justful" "400" "100%" "none"}}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   {{/textMain}}
                   {{{space "40"}}}
                   {{{shortLine "100" "2" "424242"}}}
                   {{{space "40"}}}
-                  {{#makeButton "18" "700" "none" "http://absolvent.pl/" "250" "50" "7b1fa2" "4a148c" "10" "fff" "center"}}
+                  {{#makeButton "18" "fff" "center" "700" "none" "250" "50"  "7b1fa2" "4a148c" "10" "http://absolvent.pl/"}}
                     Aplikuj
                   {{/makeButton}}
                   {{{space "30"}}}
@@ -43,10 +43,72 @@
                     {{title}}
                   {{/list}}
                   {{{space "30"}}}
+                <!-- Context box -->
+                  {{#context "30" "30"}}
+                    <!-- 1 -->
+                    {{#column "180" "left"}}
+                      {{{context_img "60" "60" "center" "http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" "ziemia" "absolvent.pl"}}}
+                      {{{context_height "20"}}}
+                      {{#context_text  "16" "400" "212121" "100%" "center" "none"}}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      {{/context_text}}
+                      {{{context_height "20"}}}
+                      {{#context_link "absolvent.pl" "12" "100" "346abe" "center" "none" "none"}}
+                        link
+                      {{/context_link}}
+                    {{/column}}
+                  <!-- 2 -->
+                    {{#column "180" "left"}}
+                      {{{context_img "60" "60" "center" "http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" "ziemia" "absolvent.pl"}}}
+                      {{{context_height "20"}}}
+                      {{#context_text  "16" "400" "212121" "100%" "center" "none"}}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      {{/context_text}}
+                      {{{context_height "20"}}}
+                      {{#context_link "absolvent.pl" "12" "100" "346abe" "center" "none" "none"}}
+                        link
+                      {{/context_link}}
+                    {{/column}}
+                  <!-- 3 -->
+                    {{#column "180" "left"}}
+                      {{{context_img "60" "60" "center" "http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" "ziemia" "absolvent.pl"}}}
+                      {{{context_height "20"}}}
+                      {{#context_text  "16" "400" "212121" "100%" "center" "none"}}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      {{/context_text}}
+                      {{{context_height "20"}}}
+                      {{#context_link "absolvent.pl" "12" "100" "346abe" "center" "none" "none"}}
+                        link
+                      {{/context_link}}
+                    {{/column}}
+                  {{/context}}
+                  <!-- End Context Box -->
+                  <!-- Content Box on 2 img -->
+                  {{#context "30" "30"}}
+                    {{#column "280" "left"}}
+                      {{{context_height "40"}}}
+                      {{{context_img "250" "auto" "center" "http://www.consciousnessis.net/images/Mars_Icon_2_512x512x32.png" "mars" "absolvent.pl"}}}
+                    {{/column}}
+                    {{#column "280" "right"}}
+                      {{{context_height "20"}}}
+                      {{#context_text  "20" "700" "212121" "100%" "left" "none"}}
+                        Lorem ipsum dolor sit amet.
+                      {{/context_text}}
+                      {{{context_height "40"}}}
+                      {{#context_text  "15" "400" "212121" "100%" "left" "none"}}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      {{/context_text}}
+                      {{{context_height "40"}}}
+                      {{#context_link "absolvent.pl" "12" "100" "346abe" "center" "none" "none"}}
+                        link
+                      {{/context_link}}
+                    {{/column}}
+                  {{/context}}
+                  <!-- End Content Box on 2 img -->
                 {{/block}}
               </td>
-                </tr>
-              </table>
+            </tr>
+          </table>
               {{{space "30"}}}
               {{>footer}}
             </td>
@@ -58,5 +120,4 @@
 <!-- body end -->
 </body>
 </html>
-
 
