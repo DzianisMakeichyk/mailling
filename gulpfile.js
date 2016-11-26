@@ -8,6 +8,7 @@ var gulp = require("gulp"),
     autoprefixer = require("autoprefixer"),
     browsersync = require("browser-sync").create(),
     fs = require('node-fs'),
+    pretty = require('pretty'),
     index_name = 'index_13';
 
 
@@ -55,11 +56,11 @@ gulp.task('SendToAcid', function () {
 });
 
 gulp.task('SendToMobile', function () {
-    gulp.src( './dist/' + index_name + '.html')
+    gulp.src('index.html')
         .pipe(sendmail({
             key: 'key-7f9a59e3caeaa4b4d7415b9cdda34488',
             sender: 'noreply@absolvent.pl',
-            recipient: 'xxx@gmail.com',
+            recipient: 'dzianis.makeichyk@gmail.com',
             subject: 'Mail testowy Absolvent.pl'
         }));
 });
@@ -67,6 +68,7 @@ gulp.task('SendToMobile', function () {
 gulp.task('Build', ['preview'], function() {
     return gulp.src('./*.html')
         .pipe(rename( index_name + '.html'))
+        .pipe(pretty('index.html'))
         .pipe(gulp.dest('./dist/'));
 });
 

@@ -4,7 +4,7 @@
   {{> meta}}
   {{> styles }}
 </head>
-<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; width: 100%; height: 100%; background-color: #ffffff;">
+<body style="margin: 0; padding: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; width: 100%; height: 100%; background-color: #ffffff;" id="foxeslab-email">
 <!-- body start -->
 
 <table width="600" cellpadding="0" cellspacing="0" border="0" style="margin:0; padding:0; width:100% !important; line-height: 100% !important; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
@@ -33,9 +33,15 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   {{/textMain}}
                   {{{space "40"}}}
+                  {{#context "30" "30"}}
+                      {{#context_text  "16" "400" "212121" "100%" "left" "none"}}
+                          Lorem ipsum dolor sit amet,
+                      {{/context_text}}
+                  {{/context}}
+                  {{{space "40"}}}
                   {{{shortLine "100" "2" "424242"}}}
                   {{{space "40"}}}
-                  {{#makeButton "18" "fff" "center" "700" "none" "250" "50"  "7b1fa2" "4a148c" "10" "http://absolvent.pl/"}}
+                  {{#makeButton "18" "fff" "center" "700" "none" "250" "50"  "7b1fa2" "4a148c" "http://absolvent.pl/"}}
                     Aplikuj
                   {{/makeButton}}
                   {{{space "30"}}}
@@ -46,7 +52,7 @@
                 <!-- Context box -->
                   {{#context "30" "30"}}
                     <!-- 1 -->
-                    {{#column "170" }}
+                    {{#column "178"}}
                       {{{context_img "60" "60" "center" "http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" "ziemia" "absolvent.pl"}}}
                       {{{context_height "20"}}}
                       {{#context_text  "16" "400" "212121" "100%" "center" "none"}}
@@ -59,7 +65,7 @@
                       {{{context_height "20"}}}
                     {{/column}}
                   <!-- 2 -->
-                    {{#column "170" }}
+                    {{#column "178"}}
                       {{{context_img "60" "60" "center" "http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" "ziemia" "absolvent.pl"}}}
                       {{{context_height "20"}}}
                       {{#context_text  "16" "400" "212121" "100%" "center" "none"}}
@@ -72,7 +78,7 @@
                       {{{context_height "20"}}}
                     {{/column}}
                   <!-- 3 -->
-                    {{#column "170"}}
+                    {{#column "178"}}
                       {{{context_img "60" "60" "center" "http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" "ziemia" "absolvent.pl"}}}
                       {{{context_height "20"}}}
                       {{#context_text  "16" "400" "212121" "100%" "center" "none"}}
@@ -88,7 +94,7 @@
                   <!-- End Context Box -->
                   <!-- Content Box on 2 img -->
                   {{#context "30" "30"}}
-                    {{#column "280"}}
+                    {{#column "275"}}
                       {{{context_height "40"}}}
                       {{{context_img "250" "250" "center" "http://www.consciousnessis.net/images/Mars_Icon_2_512x512x32.png" "mars" "absolvent.pl"}}}
                     {{/column}}
