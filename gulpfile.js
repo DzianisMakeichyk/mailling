@@ -8,7 +8,7 @@ var gulp = require("gulp"),
     autoprefixer = require("autoprefixer"),
     browsersync = require("browser-sync").create(),
     fs = require('node-fs'),
-    htmlbeautify = require('gulp-html-beautify'),
+    prettify = require('gulp-html-prettify'),
     index_name = 'index_13';
 
 
@@ -68,7 +68,7 @@ gulp.task('SendToMobile', function () {
 gulp.task('Build', ['preview'], function() {
     return gulp.src('./*.html')
         .pipe(rename( index_name + '.html'))
-        .pipe(htmlbeautify('index.html'))
+        .pipe(prettify({indent_char: ' ', indent_size: 2}))
         .pipe(gulp.dest('./dist/'));
 });
 
