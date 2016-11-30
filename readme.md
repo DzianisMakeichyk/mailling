@@ -20,7 +20,6 @@
 #text-color,
 #align
 #font-weight,
-#text-transform,
 #width-btn,
 #height-btn,
 #bg-color,

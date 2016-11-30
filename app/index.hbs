@@ -26,9 +26,9 @@
             <tr>
               <td width="600" style="border-collapse: collapse;" align="center" valign="top">
                 <!-- logo end -->
-                {{{headerPic "http://absolvent.pl/" "http://images.gildia.pl/_n_/literatura/news/2014/09/wszechswiat-na-sprzedaz/1-590.jpg" "absolvent img" }}} <!-- headerImg-->
-                {{{space "20"}}} <!-- spacer -->
-                {{#block "5" "90" "5"}} <!-- table -->
+                {{{headerImg "http://absolvent.pl/" "http://images.gildia.pl/_n_/literatura/news/2014/09/wszechswiat-na-sprzedaz/1-590.jpg" "absolvent img" }}} <!-- headerImg-->
+                {{{spacer "20"}}} <!-- spacer -->
+                {{#table "5" "90" "5"}} <!-- table -->
                   {{#textMain "16" "212121" "justful" "400" "100%" "none"}} <!-- ?? font-size, color, align, weight, max-width (ootional) uppercase < remove -->
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   {{/textMain}}
@@ -39,17 +39,19 @@
                           Lorem ipsum dolor sit amet,
                       {{/context_text}}
                   {{/context}}
-                  {{{space "40"}}}
+                  {{{spacer "40"}}}
                   {{{shortLine "100" "2" "424242"}}}
-                  {{{space "40"}}}
-                  {{#makeButton "18" "fff" "center" "700" "none" "250" "50"  "7b1fa2" "4a148c" "http://absolvent.pl/"}}
+                  {{{spacer "40"}}}
+                  {{#makeButton "18" "fff" "center" "700" "250" "50"  "7b1fa2" "4a148c" "http://absolvent.pl/"}}
                     Aplikuj
                   {{/makeButton}}
-                  {{{space "30"}}}
-                  {{#list "center" "fcd600" "20" "424242" "16" "700" "100%" nav}}
-                    {{title}}
+                  {{{spacer "30"}}}
+                  {{#list "center" }}
+                    {{#list_post "1." "center" "fcd600" "16" "424242" "16" "700" "100%"}}
+                        wow
+                    {{/list_post}}
                   {{/list}}
-                  {{{space "30"}}}
+                  {{{spacer "30"}}}
                 <!-- Context box -->
                   {{#context "30" "30"}}
                     <!-- 1 -->
@@ -115,11 +117,11 @@
                     {{/column}}
                   {{/context}}
                   <!-- End Content Box on 2 img -->
-                {{/block}}
+                {{/table}}
               </td>
             </tr>
           </table>
-              {{{space "30"}}}
+              {{{spacer "30"}}}
               {{>footer}}
             </td>
           </tr>
