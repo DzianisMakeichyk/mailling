@@ -8,7 +8,7 @@ var gulp = require("gulp"),
     autoprefixer = require("autoprefixer"),
     browsersync = require("browser-sync").create(),
     fs = require('node-fs'),
-    pretty = require('pretty'),
+    htmlbeautify = require('gulp-html-beautify'),
     index_name = 'index_13';
 
 
@@ -68,7 +68,7 @@ gulp.task('SendToMobile', function () {
 gulp.task('Build', ['preview'], function() {
     return gulp.src('./*.html')
         .pipe(rename( index_name + '.html'))
-        .pipe(pretty('index.html'))
+        .pipe(htmlbeautify('index.html'))
         .pipe(gulp.dest('./dist/'));
 });
 
