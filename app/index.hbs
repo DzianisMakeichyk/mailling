@@ -33,11 +33,12 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   {{/textMain}}
                   {{#context "70" "30"}} <!-- box -->
-
-
                       {{#context_text  "16" "400" "212121" "100%" "left" "none"}}
                           Lorem ipsum dolor sit amet,
                       {{/context_text}}
+                    {{#getOutputByParameters color="red"}}
+                      bang
+                    {{/getOutputByParameters}}
                   {{/context}}
                   {{{spacer "40"}}}
                   {{{shortLine "100" "2" "424242"}}}
