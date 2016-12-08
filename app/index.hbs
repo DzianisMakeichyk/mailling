@@ -26,97 +26,100 @@
             <tr>
               <td width="600" style="border-collapse: collapse;" align="center" valign="top">
                 <!-- logo end -->
-                {{{headerImg "http://absolvent.pl/" "http://images.gildia.pl/_n_/literatura/news/2014/09/wszechswiat-na-sprzedaz/1-590.jpg" "absolvent img" }}} <!-- headerImg-->
-                {{{spacer "20"}}} <!-- spacer -->
-                {{#table "5" "90" "5"}} <!-- table -->
-                  {{#textMain "16" "212121" "justful" "400" "100%" "none"}} <!-- ?? font-size, color, align, weight, max-width (ootional) uppercase < remove -->
+                {{{headerImg href="http://absolvent.pl/" src="http://images.gildia.pl/_n_/literatura/news/2014/09/wszechswiat-na-sprzedaz/1-590.jpg" alt="absolvent img"}}}
+                {{{spacer "20"}}}
+                {{#table "90"}}
+                  {{#textMain nav font_size="16" color="212121" text_align="justful" }}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   {{/textMain}}
-                  {{#context "70" "30"}} <!-- box -->
-                      {{#context_text  "16" "400" "212121" "100%" "left" "none"}}
-                          Lorem ipsum dolor sit amet,
-                      {{/context_text}}
-                    {{#getOutputByParameters color="red"}}
-                      bang
-                    {{/getOutputByParameters}}
-                  {{/context}}
+                  {{#box top="70" bottom="30"}} <!-- box -->
+                      {{#box_text nav font_size="16" weight="400" color="212121" max_width="100%" text_align="left"}}
+                          Lorem ipsum dolor sit amet - 13
+                      {{/box_text}}
+                    {{getOutputByParameters}}
+                  {{/box}}
                   {{{spacer "40"}}}
-                  {{{shortLine "100" "2" "424242"}}}
+                  {{#list nav id="nav-bar" class="top"}}
+
+                  {{/list}}
                   {{{spacer "40"}}}
-                  {{#makeButton "18" "fff" "center" "700" "250" "50"  "7b1fa2" "4a148c" "http://absolvent.pl/"}}
+                  {{{dash width="100" height="2" color="424242"
+                    }}}
+                  {{{spacer "40"}}}
+                  {{#makeButton nav font_size="18" text_color="fff" align="center" weight="700" width="250" height="50" btn_color="7b1fa2" border_color="4a148c" href="http://absolvent.pl/"  }}
                     Aplikuj
                   {{/makeButton}}
                   {{{spacer "30"}}}
                   {{#list "center" }}
-                    {{#list_post "1." "center" "fcd600" "16" "424242" "16" "700" "100%"}}
+                    {{#list_post dot="2." dot_color="fcd600" dot_size="16" color="424242" font_size="16" weight="700" align="center"}}
                         wow
                     {{/list_post}}
                   {{/list}}
                   {{{spacer "30"}}}
-                <!-- Context box -->
-                  {{#context "30" "30"}}
+                <!-- Box -->
+                  {{#box top="30" bottom="30"}}
                     <!-- 1 -->
-                    {{#column "178"}}
-                      {{{context_img "60" "60" "center" "http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" "ziemia" "absolvent.pl"}}}
-                      {{{context_height "20"}}}
-                      {{#context_text  "16" "400" "212121" "100%" "center" "none"}}
-                        Lorem ipsum dolor sit amet,
-                      {{/context_text}}
-                      {{{context_height "20"}}}
-                      {{#context_link "absolvent.pl" "12" "100" "346abe" "center" "none" "none"}}
+                    {{#column width="178"}}
+                      {{{box_img width="60" height="60" align="center" src="http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" alt="ziemia" href="absolvent.pl"}}}
+                      {{{box_height "20"}}}
+                      {{#box_text nav font_size="16" weight="400" color="212121" text_align="center"}}
+                        Lorem ipsum dolor sit amet 1
+                      {{/box_text}}
+                      {{{box_height "20"}}}
+                      {{#box_link href="absolvent.pl" font_size="12" weight="100" color="346abe" align="center" }}
                         link
-                      {{/context_link}}
-                      {{{context_height "20"}}}
+                      {{/box_link}}
+                      {{{box_height "20"}}}
                     {{/column}}
                   <!-- 2 -->
-                    {{#column "178"}}
-                      {{{context_img "60" "60" "center" "http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" "ziemia" "absolvent.pl"}}}
-                      {{{context_height "20"}}}
-                      {{#context_text  "16" "400" "212121" "100%" "center" "none"}}
+                    {{#column width="178"}}
+                      {{{box_img width="60" height="60" align="center" src="http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" alt="ziemia" href="absolvent.pl"}}}
+                      {{{box_height "20"}}}
+                      {{#box_text nav font_size="16" weight="400" color="212121" max_width="100px" text_align="center"}}
                         Lorem ipsum dolor sit amet,
-                      {{/context_text}}
-                      {{{context_height "20"}}}
-                      {{#context_link "absolvent.pl" "12" "100" "346abe" "center" "none" "none"}}
+                      {{/box_text}}
+                      {{{box_height "20"}}}
+                      {{#box_link href="absolvent.pl" font_size="12" weight="100" color="346abe" align="center" }}
                         link
-                      {{/context_link}}
-                      {{{context_height "20"}}}
+                      {{/box_link}}
+                      {{{box_height "20"}}}
                     {{/column}}
                   <!-- 3 -->
-                    {{#column "178"}}
-                      {{{context_img "60" "60" "center" "http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" "ziemia" "absolvent.pl"}}}
-                      {{{context_height "20"}}}
-                      {{#context_text  "16" "400" "212121" "100%" "center" "none"}}
+                    {{#column width="178"}}
+                      {{{box_img width="60" height="60" align="center" src="http://portal.delfinki.pl/wp-content/uploads/2012/12/planeta-ziemia1.jpg" alt="ziemia" href="absolvent.pl"}}}
+                      {{{box_height "20"}}}
+                      {{#box_text nav font_size="16" weight="400" color="212121" max_width="100%" text_align="center"}}
                         Lorem ipsum dolor sit amet, consectetur ad
-                      {{/context_text}}
-                      {{{context_height "20"}}}
-                      {{#context_link "absolvent.pl" "12" "100" "346abe" "center" "none" "none"}}
+                      {{/box_text}}
+                      {{{box_height "20"}}}
+                      {{#box_link href="absolvent.pl" font_size="12" weight="100" color="346abe" align="center" }}
                         link
-                      {{/context_link}}
-                      {{{context_height "20"}}}
+                      {{/box_link}}
+                      {{{box_height "20"}}}
                     {{/column}}
-                  {{/context}}
-                  <!-- End Context Box -->
+                  {{/box}}
+                  <!-- End Box -->
                   <!-- Content Box on 2 img -->
-                  {{#context "30" "30"}}
-                    {{#column "275"}}
-                      {{{context_height "40"}}}
-                      {{{context_img "250" "250" "center" "http://www.consciousnessis.net/images/Mars_Icon_2_512x512x32.png" "mars" "absolvent.pl"}}}
+                  {{#box top="30" bottom="30"}}
+                    {{#column width="275"}}
+                      {{{box_height "40"}}}
+                      {{{box_img width="250" height="250" align="center" src="http://www.consciousnessis.net/images/Mars_Icon_2_512x512x32.png" alt="mars" href="absolvent.pl"}}}
                     {{/column}}
-                    {{#column "260" }}
-                      {{{context_height "20"}}}
-                      {{#context_text  "20" "700" "212121" "100%" "left" "none"}}
+                    {{#column width="260" }}
+                      {{{box_height "20"}}}
+                      {{#box_text nav font_size="20" weight="400" color="212121" max_width="100%" text_align="left"}}
                         Lorem ipsum dolor sit amet.
-                      {{/context_text}}
-                      {{{context_height "40"}}}
-                      {{#context_text  "15" "400" "212121" "100%" "left" "none"}}
+                      {{/box_text}}
+                      {{{box_height "40"}}}
+                      {{#box_text nav font_size="16" weight="400" color="212121" max_width="100%" text_align="left"}}
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      {{/context_text}}
-                      {{{context_height "40"}}}
-                      {{#context_link "absolvent.pl" "12" "100" "346abe" "center" "none" "none"}}
+                      {{/box_text}}
+                      {{{box_height "40"}}}
+                      {{#box_link href="absolvent.pl" font_size="12" weight="100" color="346abe" align="center" }}
                         link
-                      {{/context_link}}
+                      {{/box_link}}
                     {{/column}}
-                  {{/context}}
+                  {{/box}}
                   <!-- End Content Box on 2 img -->
                 {{/table}}
               </td>
