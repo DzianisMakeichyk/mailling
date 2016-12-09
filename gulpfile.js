@@ -30,7 +30,7 @@ gulp.task('preview', function () {
         helpers : require('./lib/helpers')
     };
 
-    gulp.src('app/index.hbs')
+    return gulp.src('app/index.hbs')
         .pipe(handlebars(templateData, options))
         .on('error', function(error) {
             console.error(error.toString());
