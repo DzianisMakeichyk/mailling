@@ -56,7 +56,7 @@ gulp.task('SendToMobile', function () {
         .pipe(sendmail({
             key: 'key-7f9a59e3caeaa4b4d7415b9cdda34488',
             sender: 'noreply@absolvent.pl',
-            recipient: 'dzianis.makeichyk@gmail.com',
+            recipient: 'testabsolvent@gmail.com',
             subject: 'Mail testowy Absolvent.pl'
         }));
 });
