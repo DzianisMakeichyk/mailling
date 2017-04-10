@@ -1,4 +1,4 @@
-> It's simply a mailling construktor based on handlebarsjs
+> It's simply a RWD mailling construktor based on handlebarsjs
 
 
 #### npm i -d ####
