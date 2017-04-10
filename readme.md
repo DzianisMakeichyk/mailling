@@ -1,3 +1,6 @@
+> It's simply a mailling construktor based on handlebarsjs
+
+
 #### npm i -d ####
 
 1. => __gulpfile.js__
